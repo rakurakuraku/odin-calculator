@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <Title>Calc Test</Title>
+</head>
+<body>
+    
+<script>
+    "use strict";
+
+const add = function(x, y) {
+return(x + y);
+};
+
+const subtract = function(x, y) {
+	return(x - y);
+};
+
+const multiply = function(...nums) {
+    let result = 1;
+    for (let num of nums) {
+      result *= num;
+    }
+    return(result);
+  };
+
+const divide  = function(x, y) {
+    return(x / y);
+};
+
+let first = 0;
+let second = 0;
+let answer = 0;
+let operator = '';
+
+let calculation = function (x, y, op) {
+    switch(op) {
+      
+      case "add":
+        return(x + y);
+      
+      case "subtract":
+        return(x - y);
+
+      case "multiply":
+        return(x * y);
+
+      case "divide":
+        return(x / y);
+    }
+}
+
+</script>
+
+</body>
+</html>
